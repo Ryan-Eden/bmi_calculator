@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Inter", sans-serif;
+  --fs-xxl: 6.4rem;
+  --fs-xl: 4.8rem;
+  --fs-l: 3.2rem;
+  --fs-m: 2.4rem;
+  --fs-s: 2rem;
+  --fs-xs: 1.4rem;
+  --fs-body: 1.6rem;
+  --clr-blue: #345ff6;
+  --clr-metal: #253347;
+  --clr-electric: #5e6e85;
+  --clr-white: #fff;
+  --radius: 16px;
+  --radius-sm: 12px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  color: var(--clr-electric);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+}
+
+h2 {
+  font-size: var(--fs-l);
+}
+
+h3 {
+  font-size: var(--fs-m);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-metal);
+}

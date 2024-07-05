@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Body Mass Index Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section class="intro" id="intro">
+        <div class="background">
+          <img src="/images/logo.svg" alt="" class="logo" />
+          <h1>Body Mass Index Calculator</h1>
+          <p>
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+          <form class="bmi-form" id="bmi-form">
+            <p>Enter your card details below</p>
+            <div class="radio-inputs">
+              <div class="metric-radio-input">
+                <input
+                  type="radio"
+                  id="metric-radio"
+                  name="measurment-type"
+                  value="metric"
+                />
+                <label for="metric-radio">Metric</label>
+              </div>
+              <div class="imperial-radio-input">
+                <input
+                  type="radio"
+                  id="imperial-radio"
+                  name="measurment-type"
+                  value="imperial"
+                />
+                <label for="imperial-radio">Imperial</label>
+              </div>
+            </div>
+            <div class="metric-inputs">
+              <div class="metric-height-input">
+                <label for="metric-height">Height</label>
+                <input
+                  type="text"
+                  id="metric-height"
+                  name="metric-height"
+                  placeholder="cm"
+                />
+              </div>
+              <div class="metric-weight-input">
+                <label for="metric-weight">Weight</label>
+                <input
+                  type="text"
+                  id="metric-weight"
+                  name="metric-weight"
+                  placeholder="kg"
+                />
+              </div>
+            </div>
+            <div class="bmi-output">
+              <p>Your bmi is... <span id="bmi-value">23.4</span></p>
+              <p>
+                Your BMI suggests you’re a healthy weight. Your ideal weight is
+                between <strong>63.3kgs - 85.2kgs </strong>.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
