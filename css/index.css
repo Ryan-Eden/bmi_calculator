@@ -23,6 +23,16 @@
   --radius-sm: 12px;
 }
 
+.background {
+  width: 100%;
+  height: 64rem;
+  background: linear-gradient(to left, #d6e6fe, #d6fcfe00);
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  z-index: 1;
+  position: relative;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -35,6 +45,8 @@ body {
 
 h1 {
   font-size: var(--fs-xl);
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
 }
 
 h2 {
@@ -45,8 +57,204 @@ h3 {
   font-size: var(--fs-m);
 }
 
+h4 {
+  font-size: var(--fs-s);
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--clr-metal);
+}
+
+p {
+  line-height: 1.4;
+}
+
+main {
+  max-width: 37.5rem;
+  /* min-width: 34.5rem; */
+  margin: 0 auto;
+}
+
+section {
+  padding: 4.8rem 0;
+}
+
+input[type="radio"] {
+  width: 3.1rem;
+  height: 3.1rem;
+}
+
+input[type="text"] {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--fs-m);
+  padding: 2rem;
+  border: 1px solid var(--clr-electric);
+  border-radius: var(--radius-sm);
+  width: 100%;
+}
+
+input[type="text"]::placeholder {
+  text-align: right;
+  color: var(--clr-blue);
+  font-weight: 700;
+}
+
+.container {
+  padding: 0 2.4rem;
+}
+
+/* === INTRO STYLES === */
+
+.logo {
+  display: block;
+  margin: 0 auto 2.4rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.intro {
+  padding-top: 0;
+  text-align: center;
+}
+
+.intro-container {
+  padding-top: 3.6rem;
+}
+
+.intro-text {
+  margin-bottom: 4.8rem;
+}
+
+.bmi-form {
+  max-width: 32.8rem;
+  width: 100%;
+  text-align: left;
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 2.1rem;
+  box-shadow: 0px 3px 30px rgba(52, 95, 246, 0.15);
+}
+
+.bmi-form > h3 {
+  font-size: 2.1rem;
+}
+
+.radio-inputs {
+  display: flex;
+  gap: 4.2rem;
+  margin: 2.4rem 0;
+}
+
+.metric-radio-input,
+.imperial-radio-input {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.radio-inputs label {
+  font-weight: 700;
+  color: var(--clr-metal);
+}
+
+.metric-inputs label {
+  display: block;
+  font-size: var(--fs-xs);
+  margin-bottom: 0.8rem;
+}
+
+.metric-inputs > div {
+  margin-bottom: 2.4rem;
+}
+
+.bmi-output {
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 2.4rem;
+}
+
+.bmi-output span {
+  display: block;
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+/* === ABOUT STYLES === */
+
+section.about-bmi {
+  padding-top: 50rem;
+  padding-bottom: 4.8rem;
+}
+
+.about-bmi h2 {
+  margin-bottom: 2.4rem;
+}
+
+.about-img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+/* TIPS STYLES */
+
+section.tips {
+  background: linear-gradient(to top left, #d6e6fe4b, #d6fcfe00);
+  /* padding-top: 2.4rem; */
+}
+
+.tip {
+  margin-bottom: 3.6rem;
+}
+
+.tip:last-child {
+  margin-bottom: 0;
+}
+
+.tip > img,
+.tip h3 {
+  margin-bottom: 2.4rem;
+}
+
+/* LIMITATIONS STYLES */
+.limitations {
+  text-align: center;
+}
+
+.limitations h2 {
+  margin-bottom: 2.4rem;
+}
+
+.limitations-container {
+  text-align: left;
+}
+
+.limitations-summary {
+  margin-bottom: 4.8rem;
+}
+
+.limitation {
+  background-color: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: 0px 5px 30px #8faecf40;
+  padding: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.limitation:last-child {
+  margin-bottom: 0;
+}
+
+.limitation-header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.6rem;
 }
